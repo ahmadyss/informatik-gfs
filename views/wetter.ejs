@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>EJS Is Fun</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { padding-top:50px; }
+</style>
+</head>
+<body class="container">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Wetter Checker</a>
+        <ul class="navbar-nav mr-auto">
+        </ul>
+      </nav>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Wetter in: <%= stadt %></h5>
+              <p class="card-text">Es sind <%= temp %>°C Grad in <%= stadt %> </p>
+            </div>
+          </div>
+    </div>
+</main>
+
+<footer>
+    <p class="text-center text-muted">© Erstellt von Ahmad</p>
+</footer>
+
+</body>
+</html>
